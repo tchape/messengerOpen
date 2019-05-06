@@ -30,14 +30,14 @@ pipeline{
         steps{
              echo "test"
             // sh 'mvn test'
-            sh 'mysql --version'
+           // sh 'mysql --version'
         }
      }
 
      stage('Déploiement du projet '){
           steps{
               echo "debut du deploiement avec maven"
-               sh 'mvn deploy'
+              // sh 'mvn deploy'
           }
        }
   }
